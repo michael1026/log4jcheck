@@ -13,8 +13,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
-	"github.com/michael1026/paramfinder/util"
 )
 
 func main() {
@@ -112,7 +110,7 @@ func readLines(path string) ([]string, error) {
 	var lines []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		lines = util.AppendIfMissing(lines, scanner.Text())
+		lines = append(lines, scanner.Text())
 	}
 	return lines, scanner.Err()
 }
