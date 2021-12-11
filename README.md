@@ -2,7 +2,7 @@
 
 ### Install
 ```
-go install https://github.com/michael1026/log4jcheck@latest
+go install github.com/michael1026/log4jcheck@latest
 ```
 
 ### Example Usage
